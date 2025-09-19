@@ -7,7 +7,7 @@ func SetupHealthRoutes(app *fiber.App) {
 		return c.SendString("Hello, World!")
 	})
 
-	app.Get("/health", func(c *fiber.Ctx) error {
+	app.Get("/kaithheathcheck", func(c *fiber.Ctx) error {
 		return c.JSON(fiber.Map{
 			"status":  "ok",
 			"service": "notification-service",
