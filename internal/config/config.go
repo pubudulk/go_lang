@@ -24,7 +24,7 @@ func Load() *Config {
 
 	config := &Config{
 		Port:         getEnvWithDefault("PORT", "8080"),
-		MongoURI:     getEnvWithDefault("MONGO_URI", "MONGO_URI=mongodb+srv://root:bfw9sJjTXxfleyu7@localdevincidents.voqqf7r.mongodb.net/localdevincidents?retryWrites=true&w=majority&ssl=true&sslInsecure=true"),
+		MongoURI:     getEnvWithDefault("MONGO_URI", "mongodb+srv://root:bfw9sJjTXxfleyu7@localdevincidents.voqqf7r.mongodb.net/localdevincidents?retryWrites=true&w=majority&ssl=true&sslInsecure=true"),
 		DatabaseName: getEnvWithDefault("DATABASE_NAME", "localdevincidents"),
 		Environment:  getEnvWithDefault("ENVIRONMENT", "development"),
 	}
